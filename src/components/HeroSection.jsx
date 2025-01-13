@@ -1,3 +1,5 @@
+import { Link, Links } from "react-router-dom";
+
 const HeroSection = () => {
     return (
       <section
@@ -16,12 +18,12 @@ const HeroSection = () => {
             Get fresh, locally sourced produce straight from the farm to your
             doorstep.
           </p>
-          <a
-            href="/products"
+          <Link
+            to="/products"
             className="inline-block bg-green-500 text-white text-lg font-semibold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-green-600"
           >
             Order Now
-          </a>
+          </Link>
         </div>
       </section>
     );
